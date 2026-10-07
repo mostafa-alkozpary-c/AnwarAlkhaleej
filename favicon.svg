@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="goldGradFav" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="blueGradFav" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="beamFav" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Circular background with subtle gold border -->
+  <circle cx="64" cy="64" r="62" fill="url(#blueGradFav)" stroke="url(#goldGradFav)" stroke-width="4"/>
+
+  <!-- Light Sun rays at top center -->
+  <circle cx="64" cy="30" r="12" fill="url(#goldGradFav)" opacity="0.3"/>
+  <path d="M64,12 L64,18 M64,42 L64,48 M46,30 L52,30 M76,30 L82,30" 
+        stroke="#FFD700" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Truck Silhouette -->
+  <!-- Cargo Body -->
+  <rect x="25" y="48" width="46" height="34" rx="3" fill="url(#goldGradFav)"/>
+  <line x1="40" y1="48" x2="40" y2="60" stroke="#78350F" stroke-width="2"/>
+  <line x1="55" y1="48" x2="55" y2="60" stroke="#78350F" stroke-width="2"/>
+  <line x1="25" y1="60" x2="71" y2="60" stroke="#78350F" stroke-width="2"/>
+
+  <!-- Cabin -->
+  <path d="M71,56 L90,56 L102,68 L102,82 L71,82 Z" fill="#F8FAFC"/>
+  <path d="M75,60 L88,60 L96,68 L75,68 Z" fill="#0284C7"/>
+  <!-- Headlight beam -->
+  <polygon points="102,74 118,68 118,80" fill="url(#beamFav)"/>
+
+  <!-- Wheels -->
+  <circle cx="42" cy="84" r="9" fill="#0F172A" stroke="#E2E8F0" stroke-width="2.5"/>
+  <circle cx="42" cy="84" r="4" fill="url(#goldGradFav)"/>
+  
+  <circle cx="90" cy="84" r="9" fill="#0F172A" stroke="#E2E8F0" stroke-width="2.5"/>
+  <circle cx="90" cy="84" r="4" fill="url(#goldGradFav)"/>
+
+  <!-- Bottom Arch -->
+  <path d="M22,106 Q64,116 106,106" stroke="url(#goldGradFav)" stroke-width="3" stroke-linecap="round" fill="none"/>
+</svg>
